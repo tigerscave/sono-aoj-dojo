@@ -2,7 +2,14 @@ let fs = require('fs');
 
 const yourAnswerFunctionComesHere = data => {
   console.log("---this is data---");
-  console.log(data);
+  console.log(typeof(data));
+  const numbersArray = data.split(" ");
+  numbersArray.sort((a,b) => {
+    return b - a;
+    }
+  );
+  const numbersData = numbersArray.join(" ");
+  console.log(numbersData);
 }
 
 const readFile = path => {
