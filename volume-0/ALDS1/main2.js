@@ -5,9 +5,9 @@ const yourAnswerFunctionComesHere = data => {
 
   const Arry = data.split(/\n/);
   console.log(Arry);
-  
-  var indices = [];
-  var idx1 = Arry[0].indexOf(Arry[1]);
+
+  let indices = [];
+  let idx1 = Arry[0].indexOf(Arry[1]);
   while (idx1 != -1) {
     indices.push(idx1);
     idx1 = Arry[0].indexOf(Arry[1], idx1 + 1);
